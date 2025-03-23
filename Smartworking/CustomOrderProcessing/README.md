@@ -42,6 +42,7 @@ PUT
 1. The module is designed and developed considering single-order processing("synchronous": false) and Multiple order processing ("synchronous": true).
 2. When processing multiple orders one must pass ("synchronous": false) in the API which enables processing of the orders in the background through the Queue system ensuring API response time is not increased with the increase in the number of orders to be processed
 3. When orders are updated via queue all the actions are registered in Magento's logs file to make sure users do not miss any updates and the same can be communicated to the system  calling the API
-4. Module is developed considering headless approach making is ideal for the Hyva theme.
+4. The module has been developed with a headless approach, making it ideal for the Hyva theme.
+5. All the changes in the order status are recorded in order_status_change_log table 
 
 
