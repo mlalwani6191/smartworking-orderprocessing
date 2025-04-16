@@ -1,8 +1,0 @@
-<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework-message-queue:etc/queue.xsd">
-    <broker topic="smartworking.customorderprocessing" exchange="magento-db" type="db">
-        <queue name="smartworking.customorderprocessing"
-               consumer="smartworking.customorderprocessing"
-               consumerInstance="Magento\Framework\MessageQueue\Consumer"
-               handler="Smartworking\CustomOrderProcessing\Model\Consumer\OrderProcessing::process"/>
-    </broker>
-</config>
